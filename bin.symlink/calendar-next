@@ -1,0 +1,3 @@
+#!/bin/bash
+
+calendar-events | head -n 1 | awk -F "=" '{print $1 " - " $2}' | tr -d •

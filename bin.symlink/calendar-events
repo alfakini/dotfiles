@@ -1,0 +1,3 @@
+#!/bin/bash
+
+icalBuddy -n -iep "title,datetime" -ps "|=|" -po "datetime,title" -eed -ea eventsToday
