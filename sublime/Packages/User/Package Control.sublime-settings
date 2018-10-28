@@ -41,7 +41,6 @@
 		"IndentX",
 		"Javascript Beautify",
 		"Jinja2",
-		"Markdown Preview",
 		"Package Control",
 		"Pretty JSON",
 		"Pretty Ruby",
@@ -58,7 +57,6 @@
 		"SideBarEnhancements",
 		"SublimeERB",
 		"SublimeLinter",
-		"SublimeLinter-contrib-eslint",
 		"SublimeLinter-contrib-reek",
 		"SublimeLinter-pylint",
 		"SublimeLinter-rubocop",
@@ -66,7 +64,9 @@
 		"Theme - Soda",
 		"TodoReview",
 		"TypeScript",
-		"Vintageous"
+		"Vintageous",
+		"MarkdownPreview",
+		"SublimeLinter-eslint"
 	],
 	"repositories":
 	[

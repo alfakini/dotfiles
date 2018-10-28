@@ -1,5 +1,6 @@
 Pry.config.history.file = '~/.pry_history'
 Pry.config.should_load_plugins = true
+Pry.config.editor = 'code'
 
 if defined?(PryByebug)
   Pry.commands.alias_command 'c', 'continue'
