@@ -4,21 +4,13 @@ alias sublime="subl"
 alias b="bundle"
 alias be="bundle exec"
 alias bake="be rake"
-alias best="be ruby -I test/"
-alias migratereset="bundle exec rake db:drop db:create db:migrate db:seed ; bundle exec spring stop"
-
-# Rubygems
-alias gemi="gem install"
-
-# Rails
-alias migrate="bundle exec rails db:migrate"
 
 # Postgres
-alias pgstart="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias pgstop="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pgstart="brew services run postgresql"
+alias pgstop="brew services stop postgresql"
 
 # Redis
-alias redisstart="redis-server /usr/local/etc/redis.conf"
+alias redisstart="brew services run redis"
 
 # Git
 alias gitbranchda='git branch | egrep -v "(master|\*)" | xargs git branch -D'
@@ -35,20 +27,14 @@ alias e="exit"
 alias c="clear"
 alias del="rm"
 
-# List the 10 most recently changed files
-alias lsh="ls -t | head"
-
 # List the disk usage of files, sorted by their size
 alias duf='du -sk * | sort -n | perl -ne '\''($s,$f)=split(m{\t});for (qw(K M G)) {if($s<1024) {printf("%.1f",$s);print "$_\t$f"; last};$s=$s/1024}'\'
 
 # Mac
 if [ "$(uname)" == "Darwin" ]; then
   alias ls="exa"
+  alias cat="bat"
   alias locate="mdfind"
   alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
   alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
 fi
-
-function chrome() {
-  open $@ --args --allow-file-access-from-files
-}
