@@ -61,5 +61,3 @@ shopt -s histappend;
 shopt -s cdspell;
 
 [ -f ~/.bash_local ] && . ~/.bash_local
-
-export GPG_TTY=$(tty)

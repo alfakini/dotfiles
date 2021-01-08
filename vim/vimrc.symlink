@@ -52,7 +52,7 @@ syntax enable
 set background=dark
   " colorscheme solarized
   " colorscheme molokai
-colorscheme tomorrow-night
+  " colorscheme tomorrow-night
 set cursorline   " Highliht cursor line
 set showmatch    " Show matching brackets.
 set mat=2        " How many tenths of a second to blink

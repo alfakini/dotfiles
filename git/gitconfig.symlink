@@ -54,6 +54,10 @@
 	excludesfile = /Users/alfakini/.gitignore_global
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   quotepath = false
+  pager = delta --plus-color="#012800" --minus-color="#340001" --theme='Monokai Extended'
+
+[interactive]
+    diffFilter = delta --color-only
 
 [diff]
   # Detect copies as well as renames
@@ -79,8 +83,5 @@
   default = current
 
 [user]
-	name = Alan Fachini
-	email = hi@alfakini.com
-
-[web]
-  browser = google-chrome
+	name = Alan R. Fachini
+	email = alan@magrathealabs.com
